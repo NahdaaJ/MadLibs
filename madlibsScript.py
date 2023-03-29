@@ -1,8 +1,12 @@
 ## MADLIBS PROJECT
 # Author: Nahdaa Jawed
 # Date Started: 25/03/2023 23:45
-# Date Finished: -
-# Description:
+# Date Finished: 29/03/2023 14:30
+# Description:  A MadLibs game where the user is initially prompted to choose a story.
+#               After they choose their story, they are prompted to enter keywords such as adjectives and nouns.
+#               The story of choice is then printed using the keywords that the user has entered.
+#               The program then asks the user if they would like to play again.
+#               If they say yes, they are returned to the story choice prompt, if they say no, the program ends.
 
 # Defining the game as a function.
 def madLibs():
