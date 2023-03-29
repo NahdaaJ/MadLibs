@@ -4,9 +4,13 @@
 # Date Finished: -
 # Description:
 
+# Defining the game as a function.
 def madLibs():
+    # Allowing the user to choose which story line.
     print("\nWhich story line would you like to use? (A/B/C)\nA)The Witch\nB)The Dragon\nC)About You")
-    storyChoice = input()
+    storyChoice = input("\nYour choice: ")
+
+    # If user chooses Story A. They are prompted to input certain words, which are then printed out as part of story A.
     if storyChoice == "A":
         print("\nYou have chosen 'The Witch'! Please enter the following:\n")
         colour = input("Your favourite colour: ")
@@ -24,6 +28,7 @@ def madLibs():
             "However, the residents of the " + adj4 + " village nearby hated her because she was " + adj5 + ", \nbut she did not care, and sipped her " + adj6 + " tea "
             "peacefully on her porch everyday. :)\nThe End!")
 
+        # Giving the user the option to play again or to exit using recursion.
         print("\nPlay again? (Y/N)")
         playAgain = input()
         if playAgain == "Y":
@@ -32,8 +37,7 @@ def madLibs():
             print("Goodbye! Thanks for playing!")
             return
 
-
-
+    # If user chooses Story B. They are prompted to input certain words, which are then printed out as part of story B.
     elif storyChoice == "B":
         print("\nYou have chosen 'The Dragon'! Please enter the following: ")
         adj1 = input("\nAdjective: ")
@@ -48,6 +52,7 @@ def madLibs():
             "'" + adj4 + " dragon! \nToday I will slay you, save the " + adj5 + " princess and then marry her!' "
             "\nThe dragon and princess exchanged glances, laughed, and continue to enjoy their " + adj6 + " tea party. :)\nThe End!")
 
+        # Giving the user the option to play again or to exit using recursion.
         print("\nPlay again? (Y/N)")
         playAgain = input()
         if playAgain == "Y":
@@ -56,6 +61,7 @@ def madLibs():
             print("Goodbye! Thanks for playing!")
             return
 
+    # If user chooses Story C. They are prompted to input certain words, which are then printed out as part of story C.
     elif storyChoice == "C":
         print("You have chosen 'About You'! Please enter the following:\n")
         playerName = input("\nYour name: ")
@@ -70,6 +76,7 @@ def madLibs():
               "\nI absolutely love to "+actionVerb+"!. I have a cat called "+someImportant+
               " but it hates my best friend, "+celebName+". \nTo keep clean, i rub "+favFood+" all over before bed every night!")
 
+        # Giving the user the option to play again or to exit using recursion.
         print("\nPlay again? (Y/N)")
         playAgain = input()
         if playAgain == "Y":
@@ -82,5 +89,5 @@ def madLibs():
         print("Oh, you didn't pick a story! Guess you don't want to play :(\nGoodbye!")
         return
 
-
+# Now that the game function has been defined, we can run it.
 madLibs()
